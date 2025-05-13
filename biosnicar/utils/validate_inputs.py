@@ -20,7 +20,7 @@ def validate_inputs(ice, illumination, impurities):
     Returns:
         None
     """
-    print("\n** Validating model configuration **")
+    #print("\n** Validating model configuration **")
     validate_snow_algae(impurities)
     validate_illumination(illumination)
     validate_ice(ice)
@@ -69,7 +69,7 @@ def validate_snow_algae(impurities):
                     "\nyour chosen snow algae file has its absorption cross section in m2/cell, so please express concentration in cells/mL"
                 )
 
-    print("snow algae OK")
+    #print("snow algae OK")
 
     return
 
@@ -113,7 +113,7 @@ def validate_glacier_algae(impurities):
                 print("be warned the snow algae optical properties")
                 print("are theoretical and yet to be field validated")
 
-    print("glacier algae OK")
+    #print("glacier algae OK")
 
     return
 
@@ -141,7 +141,7 @@ def validate_illumination(illumination):
     if illumination.direct > 1 or illumination.direct < 0:
         raise ValueError("Beam type is incorrect: it should be 0 or 1")
 
-    print("illumination OK")
+    #print("illumination OK")
 
     return
 
@@ -182,7 +182,7 @@ def validate_ice(ice):
                 "Grain size only available up to 1500um with selected ref index"
             )
 
-    print("ice OK")
+    #print("ice OK")
 
     return
 

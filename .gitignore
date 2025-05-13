@@ -30,3 +30,5 @@ node_modules/.yarn-integrity
 app/node_modules
 /build
 *dask*
+**/*ipynb_checkpoints*
+*.nc

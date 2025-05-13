@@ -44,7 +44,7 @@ def setup_snicar(input_file):
         plot_config,
     ) = build_classes(input_file)
 
-    print(model_config.window_size)
+    #print(model_config.window_size)
     return (
         ice,
         illumination,
@@ -107,7 +107,7 @@ def build_impurities_array(input_file):
 
     return impurities
 
-    print("SETUP OK")
+    #print("SETUP OK")
 
 
 if __name__ == "__main__":

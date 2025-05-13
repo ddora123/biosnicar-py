@@ -32,12 +32,12 @@ def get(solver, plot, validate):
 
     # now run one or both of the radiative transfer solvers
     if solver == "toon":
-        print("\nRunning biosnicar with the Toon solver\n")
+        #print("\nRunning biosnicar with the Toon solver\n")
         outputs = toon_solver(
             tau, ssa, g, L_snw, ice, illumination, model_config, rt_config
         )
     elif solver == "adding-doubling":
-        print("\nRunning biosnicar with the adding-doubling solver\n")
+        #print("\nRunning biosnicar with the adding-doubling solver\n")
 
         outputs = adding_doubling_solver(
             tau, ssa, g, L_snw, ice, illumination, model_config
@@ -51,4 +51,4 @@ def get(solver, plot, validate):
     if plot:
         plot_albedo(plot_config, model_config, outputs.albedo)
     display_out_data(outputs)
-    return outputs.albedo
+    return outputs
