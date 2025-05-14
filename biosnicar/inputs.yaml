@@ -15,7 +15,7 @@ RTM:
   NIR_MAX_IDX: 480
 
 ICE:
-  DZ: [0.006826890475866409]
+  DZ: [0.10125083829605885]
   LAYER_TYPE: [1]  # 0: ice spheres, 1: solid ice w/frsnl, 2: w/out frsnl, 3: interspersed water/ice spheres
   CDOM: [0]  # Only for layer type :: 1
   RHO: [300]  # density of each layer (unit : kg m-3)
@@ -56,7 +56,7 @@ IMPURITIES:
     CFACTOR: 1
     COATED: False
     UNIT: 0
-    CONC: [0.0]
+    CONC: [5.726452310834661]
   
   SA:
     NAME: "sa"
